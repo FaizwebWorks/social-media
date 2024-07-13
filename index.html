@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TrendSpot</title>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mukta:wght@200;300;400;500;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main min-h-screen w-full bg-[#F6F6F6]">
+      <nav class="h-[9vh] w-full flex items-center px-6 py-8 bg-white justify-between">
+        <div class="n-left flex items-center gap-8">
+          <h1 class="font-bold tracking-tighter text-[#212121] text-2xl">
+            TrendSpot
+          </h1>
+          <input
+            class="w-[18vw] bg-gray-100 text-sm flex items-center rounded-lg pl-11 px-4 py-2"
+            type="text"
+            placeholder="Search"
+          />
+          <i data-feather="search" class="text-[#A6A6A6] absolute left-[12%] h-5 w-5"></i>
+          <div class="flex items-center gap-12">
+          <div class="flex gap-2 bg-gray-100 px-2 py-1 rounded-full text-blue-500 text-base flex items-center font-semibold"><i data-feather="home" class="h-5 w-5 text-blue-500"></i></i>Home</div>
+          <i class="h-5 w-5 opacity-70" data-feather="compass"></i>
+          <i class="h-5 w-5 opacity-70" data-feather="message-circle"></i>
+          <i class="h-5 w-5 opacity-70" data-feather="bell"></i>
+          <i class="h-5 w-5 opacity-70" data-feather="users"></i>
+
+          </div>
+        </div>
+        <div class="n-right flex items-center gap-8">
+            <div class="profile flex items-center gap-2">
+              <div class="pimg h-9 w-9 bg-red-400 rounded-full overflow-hidden">
+                <img class="h-full w-full object-right object-cover" src="./assets/Me.jpg" alt="">
+              </div>
+              <p class="opacity-70 text-sm font-medium">ur_faizz</p>
+            </div>
+            <div class="switch">
+                <p class="text-blue-500 text-sm font-semibold">Switch</p>
+            </div>
+        </div>
+      </nav>
+      <div class="hero-section overflow-hidden scroll-smooth flex justify-between bg-zinc-100 w-full">
+        <div class="hleft overflow-hidden h-full w-[30%] px-6 py-4 flex flex-col gap-6">
+          <div class="h-1/2 w-full bg-white rounded-2xl py-4 px-6">
+            <div class="banner-img relative w-full h-24 bg-red-400 rounded-2xl">
+              <!-- <img class="h-full w-full rounded-2xl object-cover object-top" src="./assets/Group.jpg" alt=""> -->
+              <img class="h-full w-full rounded-2xl object-cover" src="./assets/GroupImg (1).JPEG" alt="">
+              <div class="h-16 w-16 border-[5px] border-white bottom-[-30%] left-1/2 -translate-x-1/2 rounded-full absolute overflow-hidden">
+                <img class="h-full w-full object-top object-cover" src="./assets/Me.jpg" alt="">
+              </div>
+            </div>
+            <div class="w-full flex flex-col items-center justify-center mt-7">
+              <p class="font-semibold">Faizal Shaikh</p>
+              <p class="opacity-60 font-medium text-sm">@ur_faizz</p>
+            </div>
+            <div class="w-full flex justify-between text-center items-center mt-5 px-4">
+              <div class="post flex flex-col items-center justify-center">
+                <p class="font-bold">250</p>
+                <p class="capitalize text-sm font-semibold opacity-60">post</p>
+              </div>
+              <div class="followers flex flex-col items-center justify-center">
+                <p class="font-bold">2002</p>
+                <p class="capitalize text-sm font-semibold opacity-60">followers</p>
+              </div>
+              <div class="following flex flex-col items-center justify-center">
+                <p class="font-bold">590</p>
+                <p class="capitalize text-sm font-semibold opacity-60">following</p>
+              </div>
+            </div>
+            <button class="capitalize mt-4 w-full py-2 rounded-xl bg-blue-500 text-white">My Profile</button>
+          </div>
+          <div class="h-1/2 w-full bg-white px-6 py-6 rounded-2xl">
+            <div class="title flex justify-between items-center">
+              <p class="text-sm font-bold text-[#212121]">Your shortcuts</p>
+              <p class="text-sm opacity-50 font-semibold">See all</p>
+            </div>
+            <div class="shortcuts flex flex flex-col gap-4 pt-5">
+              <div class="shortcutsSection-1 flex items-center gap-5">
+                <div class="imgsrt h-10 w-10 rounded-full overflow-hidden">
+                  <img class="h-full w-full object-cover" src="https://assets.lummi.ai/assets/QmZkJh3ks8DuFbF4K5e6ngbxiWw86aSJuGFnHSSMBeBMaP?auto=format&w=1500" alt="">
+                </div>
+                <p class="text-sm font-semibold">Art & drawing</p>
+              </div>
+              <div class="shortcutsSection-1 flex items-center gap-4">
+                <div class="imgsrt h-10 w-10 rounded-full overflow-hidden">
+                  <img class="h-full w-full object-cover object-[75%]" src="https://images.unsplash.com/photo-1649091245826-6f9a6e2b9268?q=80&w=2062&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                </div>
+                <p class="text-sm font-semibold">Dribble Pro</p>
+              </div>
+              <div class="shortcutsSection-1 flex items-center gap-4">
+                <div class="imgsrt h-10 w-10 rounded-full overflow-hidden">
+                  <img class="h-full w-full object-cover object-[75%]" src="https://images.unsplash.com/photo-1649091245811-e4f8fe9b9cd5?q=80&w=2062&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                </div>
+                <p class="text-sm font-semibold">Behance Creative</p>
+              </div>
+              <div class="shortcutsSection-1 flex items-center gap-4">
+                <div class="imgsrt h-10 w-10 rounded-full overflow-hidden">
+                  <img class="h-full w-full object-cover" src="https://images.unsplash.com/photo-1592547097938-7942b22df3db?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                </div>
+                <p class="text-sm font-semibold">One Piece Fan</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hcenter scroll-smooth flex flex-col posts overflow-y-auto h-full w-[60%] py-4">
+          <div class="h-full w-full">
+            <div class="w-full h-30 bg-white rounded-2xl py-4 px-4">
+              <div class="flex items-center relative gap-4">
+                <div class="pimg h-11 w-11 rounded-full overflow-hidden">
+                  <img class="w-full h-full object-top object-cover" src="./assets/Me.jpg" alt="">
+                </div>
+                <input class="bg-zinc-100 py-2 px-4 w-full rounded-full placeholder:text-xs font-medium" type="text" placeholder="Share something...">
+                <i class="absolute right-0 mx-4 text-zinc-500" data-feather="smile"></i>
+              </div>
+              <div class="media pt-7 pl-[4vw] flex items-center justify-between pr-2">
+                <div class="mleft flex items-center gap-10">
+                  <div class="flex items-center gap-2">
+                    <i class="h-5 w-5" data-feather="image"></i>
+                    <p class="text-sm font-medium">Image</p>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <i class="h-5 w-5" data-feather="video"></i>
+                    <p class="text-sm font-medium">Video</p>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <div class="border-[2px] scale-[.83] border-black rounded-md"><i class="h-5 w-5" data-feather="bar-chart-2"></i></div>
+                    <p class="text-sm font-medium">Poll</p>
+                  </div>
+                </div>
+                <div class="mright">
+                 <div class="flex items-center gap-2">
+                  <i class="text-blue-500 h-[18px] w-[18px]" data-feather="share"></i>
+                  <p class="text-blue-500 text- font-medium">Post</p>
+                 </div>
+                </div>
+              </div>
+            </div>
+            <!-- <hr class="my-4"> -->
+            <div class="flex flex-col mt-4 gap-4 w-full">
+              <div class="w-full h-fit bg-white p-6 flex flex-col gap-4 rounded-2xl">
+                <div class="flex items-center justify-between">
+                  <div class="flex items-center gap-2">
+                    <div class="pimg h-11 w-11 rounded-full overflow-hidden">
+                      <!-- <img class="h-full w-full object-cover scale-[3]" src="./assets/Nena01.jpg" alt=""> -->
+                      <img class="h-full w-full object-cover scale-[3.5]" src="./assets/Nena02.jpg" alt="">
+                      <!-- <img class="h-full w-full object-cover scale-[1.5]" src="./assets/Nena.jpg" alt=""> -->
+                    </div>
+                    <div class="pname">
+                      <p class="text-base font-bold text-[#212121]">Nency</p>
+                      <p class="text-xs opacity-40 font-medium">13 minutes ago</p>
+                    </div>
+                  </div>
+                  <i data-feather="more-vertical"></i>
+                </div>
+                <div class="caption">
+                  <p class="font-semibold text-sm">Beautiful art 📸 <span class="text-blue-500">#art #aesthetic #wallstreet #wallpaper #photography</span></p>
+                </div>
+                <div class="picture h-[45vh] w-full bg-slate-100 rounded-2xl overflow-hidden">
+                  <img class="h-full w-full object-cover" src="https://assets.lummi.ai/assets/QmZkJh3ks8DuFbF4K5e6ngbxiWw86aSJuGFnHSSMBeBMaP?auto=format&w=1500" alt="">
+                  <!-- <img class="h-full w-full object-cover" src="./assets/group2.jpg" alt=""> -->
+                </div>
+                <div class="likes flex items-center px-1 justify-between">
+                  <div class="flex gap-6">
+                    <div class="flex items-center gap-2 text-sm font-semibold text-[#212121]">
+                      <i fill="red" stroke="bg-red-400" data-feather="heart"></i>
+                      320k
+                    </div>
+                    <div class="flex items-center gap-2 text-sm font-semibold">
+                      <i class="text-[#212121]" data-feather="message-circle"></i>
+                      120
+                    </div>
+                    <div class="flex items-center gap-2 text-sm font-semibold">
+                      <i class="text-[#212121]" data-feather="bookmark"></i>
+                      148
+                    </div>
+                  </div>
+                  <i class="text-[#212121]" data-feather="send"></i>
+                </div>
+                <div class="flex items-center pt-2 relative gap-4">
+                  <div class="pimg h-11 w-11 rounded-full overflow-hidden">
+                    <img class="w-full h-full object-top object-cover" src="./assets/Me.jpg" alt="">
+                  </div>
+                  <input class="bg-zinc-100 py-2 px-4 w-full rounded-full placeholder:text-xs font-medium" type="text" placeholder="Write your comment">
+                </div>
+              </div>
+              <div class="w-full h-fit bg-white p-6 flex flex-col gap-4 rounded-2xl">
+                <div class="flex items-center justify-between">
+                  <div class="flex items-center gap-2">
+                    <div class="pimg h-11 w-11 rounded-full overflow-hidden">
+                      <img class="h-full w-full object-cover scale-[3.5]" src="./assets/Nena02.jpg" alt="">
+                    </div>
+                    <div class="pname">
+                      <p class="text-base font-bold text-[#212121]">Nency</p>
+                      <p class="text-xs opacity-40 font-medium">13 minutes ago</p>
+                    </div>
+                  </div>
+                  <i data-feather="more-vertical"></i>
+                </div>
+                <div class="caption">
+                  <p class="font-semibold text-sm">Beautiful art 📸 <span class="text-blue-500">#art #aesthetic #wallstreet #wallpaper #photography</span></p>
+                </div>
+                <div class="picture h-[45vh] w-full bg-slate-100 rounded-2xl overflow-hidden">
+                  <img class="h-full w-full object-cover" src="https://assets.lummi.ai/assets/QmZkJh3ks8DuFbF4K5e6ngbxiWw86aSJuGFnHSSMBeBMaP?auto=format&w=1500" alt="">
+                  <!-- <img class="h-full w-full object-cover" src="./assets/group2.jpg" alt=""> -->
+                </div>
+                <div class="likes flex items-center px-1 justify-between">
+                  <div class="flex gap-6">
+                    <div class="flex items-center gap-2 text-sm font-semibold text-[#212121]">
+                      <i fill="red" stroke="bg-red-400" data-feather="heart"></i>
+                      320k
+                    </div>
+                    <div class="flex items-center gap-2 text-sm font-semibold">
+                      <i class="text-[#212121]" data-feather="message-circle"></i>
+                      120
+                    </div>
+                    <div class="flex items-center gap-2 text-sm font-semibold">
+                      <i class="text-[#212121]" data-feather="bookmark"></i>
+                      148
+                    </div>
+                  </div>
+                  <i class="text-[#212121]" data-feather="send"></i>
+                </div>
+                <div class="flex items-center pt-2 relative gap-4">
+                  <div class="pimg h-11 w-11 rounded-full overflow-hidden">
+                    <img class="w-full h-full object-top object-cover" src="./assets/Me.jpg" alt="">
+                  </div>
+                  <input class="bg-zinc-100 py-2 px-4 w-full rounded-full placeholder:text-xs font-medium" type="text" placeholder="Write your comment">
+                </div>
+              </div>
+              <div class="w-full h-fit bg-white p-6 flex flex-col gap-4 rounded-2xl">
+                <div class="flex items-center justify-between">
+                  <div class="flex items-center gap-2">
+                    <div class="pimg h-11 w-11 rounded-full overflow-hidden">
+                      <img class="h-full w-full object-cover scale-[3.5]" src="./assets/Nena02.jpg" alt="">
+                    </div>
+                    <div class="pname">
+                      <p class="text-base font-bold text-[#212121]">Nency</p>
+                      <p class="text-xs opacity-40 font-medium">13 minutes ago</p>
+                    </div>
+                  </div>
+                  <i data-feather="more-vertical"></i>
+                </div>
+                <div class="caption">
+                  <p class="font-semibold text-sm">Beautiful art 📸 <span class="text-blue-500">#art #aesthetic #wallstreet #wallpaper #photography</span></p>
+                </div>
+                <div class="picture h-[45vh] w-full bg-slate-100 rounded-2xl overflow-hidden">
+                  <img class="h-full w-full object-cover" src="https://assets.lummi.ai/assets/QmZkJh3ks8DuFbF4K5e6ngbxiWw86aSJuGFnHSSMBeBMaP?auto=format&w=1500" alt="">
+                  <!-- <img class="h-full w-full object-cover" src="./assets/group2.jpg" alt=""> -->
+                </div>
+                <div class="likes flex items-center px-1 justify-between">
+                  <div class="flex gap-6">
+                    <div class="flex items-center gap-2 text-sm font-semibold text-[#212121]">
+                      <i fill="red" stroke="bg-red-400" data-feather="heart"></i>
+                      320k
+                    </div>
+                    <div class="flex items-center gap-2 text-sm font-semibold">
+                      <i class="text-[#212121]" data-feather="message-circle"></i>
+                      120
+                    </div>
+                    <div class="flex items-center gap-2 text-sm font-semibold">
+                      <i class="text-[#212121]" data-feather="bookmark"></i>
+                      148
+                    </div>
+                  </div>
+                  <i class="text-[#212121]" data-feather="send"></i>
+                </div>
+                <div class="flex items-center pt-2 relative gap-4">
+                  <div class="pimg h-11 w-11 rounded-full overflow-hidden">
+                    <img class="w-full h-full object-top object-cover" src="./assets/Me.jpg" alt="">
+                  </div>
+                  <input class="bg-zinc-100 py-2 px-4 w-full rounded-full placeholder:text-xs font-medium" type="text" placeholder="Write your comment">
+                </div>
+              </div>
+              <!-- <div class="w-full h-[55vh] bg-white rounded-2xl"></div>
+              <div class="w-full h-[55vh] bg-white rounded-2xl"></div>
+              <div class="w-full h-[55vh] bg-white rounded-2xl"></div> -->
+            </div>
+          </div>
+        </div>
+        <div class="hright overflow-hidden h-full w-[30%] flex flex-col gap-6 px-6 py-4">
+          <div class="h-1/2 w-full bg-white rounded-2xl py-4 px-6 flex flex-col gap-4">
+            <div class="activity flex items-center justify-between">
+              <p class="text-sm font-bold text-[#212121]">Activity</p>
+              <p class="text-sm font-semibold opacity-60">See all</p>
+            </div>
+            <div class="flex flex-col gap-4">
+              <div class="flex items-center gap-2">
+                <div class="imgsrt h-10 w-10 rounded-full overflow-hidden">
+                  <img class="h-full w-full object-cover" src="https://i.pinimg.com/474x/eb/b6/2d/ebb62d218ee8369c8595b469da0def9d.jpg" alt="">
+                </div>
+                <div class="flex items-center justify-between">
+                <p class="text-xs w-[50%] font-medium"><span class="font-bold">Anushka </span>Started following you. <span class="font-semibold opacity-40"> 5m</span></p>
+                  <p class="text-xs text-blue-500 font-semibold">Follow</p>
+                </div>
+              </div>
+              <div class="flex items-center gap-2">
+                <div class="imgsrt h-10 w-11 rounded-full overflow-hidden">
+                  <img class="h-full w-full object-cover" src="https://i.pinimg.com/564x/bc/cc/18/bccc18a6bc2fb97c7499aa1ab07672cd.jpg" alt="">
+                </div>
+                <div class="flex items-center justify-between w-full">
+                <p class="text-xs w-[55%] font-medium"><span class="font-bold">Rohan </span>liked your photo. <span class="font-semibold opacity-40"> 13m</span></p>
+                  <div class="pimg h-11 w-11 rounded-lg overflow-hidden">
+                    <img class="h-full w-full object-cover" src="https://i.pinimg.com/564x/12/bb/94/12bb942eb9e1d9590ed87121d14d997e.jpg" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <p class="text-sm font-bold text-[#212121]">Yesterday</p>
+            <div class="flex flex-col gap-4">
+              <div class="flex items-center justify-center gap-2">
+                <div class="imgsrt h-10 w-11 rounded-full overflow-hidden">
+                  <img class="h-full w-full object-cover" src="https://i.pinimg.com/236x/10/5b/b3/105bb36bab8f276c132a30b706e41fed.jpg" alt="">
+                </div>
+                <div class="flex items-center justify-between w-full">
+                <p class="text-xs w-[50%] font-medium"><span class="font-bold">Axit </span>liked your photo. <span class="font-semibold opacity-40"> 1D</span></p>
+                  <div class="pimg h-11 w-11 rounded-lg overflow-hidden">
+                    <img class="h-full w-full object-cover" src="https://i.pinimg.com/236x/98/96/65/989665da111b47e6747b4ae2d158088b.jpg" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="flex items-center justify-center gap-2">
+                <div class="imgsrt h-10 w-11 rounded-full overflow-hidden">
+                  <img class="h-full w-full object-cover" src="https://i.pinimg.com/236x/11/e8/fb/11e8fbe05528461b05264fda7e4e43ee.jpg" alt="">
+                </div>
+                <div class="flex items-center justify-between w-full">
+                <p class="text-xs w-[50%] font-medium"><span class="font-bold">Sumit </span>liked your photo. <span class="font-semibold opacity-40"> 1D</span></p>
+                  <div class="pimg h-11 w-11 rounded-lg overflow-hidden">
+                    <img class="h-full w-full object-cover" src="https://i.pinimg.com/236x/98/96/65/989665da111b47e6747b4ae2d158088b.jpg" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="h-1/2 w-full bg-white rounded-2xl py-4 px-6">
+             <div class="flex items-center justify-between">
+              <p class="text-sm font-bold text-[#212121]">Suggested For you</p>
+              <p class="text-sm opacity-60 font-semibold">See all</p>
+             </div>
+             <div class="suggested flex flex-col py-4 gap-4">
+              <div class="flex items-center gap-2">
+                <div class="imgsrt h-10 w-11 rounded-full overflow-hidden">
+                  <img class="h-full w-full object-cover" src="https://i.pinimg.com/736x/94/d3/56/94d35689142481755e118bb715c7c907.jpg" alt="">
+                </div>
+                <div class="flex items-center justify-between w-full">
+                <div class="flex flex-col">
+                  <p class="text-xs font-semibold">Vivaan</p>
+                  <span class="opacity-50 text-[11px] font-semibold">Followed by Dhanesh</span>
+                </div>
+                  <p class="text-xs opacity-50 font-semibold">Followed</p>
+                </div>
+              </div>
+              <div class="flex items-center gap-2">
+                <div class="imgsrt h-10 w-11 rounded-full overflow-hidden">
+                  <img class="h-full w-full object-cover" src="https://i.pinimg.com/236x/79/66/ea/7966eac0272ecbcd61451338f6582d0f.jpg" alt="">
+                </div>
+                <div class="flex items-center justify-between w-full">
+                <div class="flex flex-col">
+                  <p class="text-xs font-semibold">Rahul</p>
+                  <span class="opacity-50 text-[11px] font-semibold">Suggested for you</span>
+                </div>
+                  <p class="text-xs opacity-50 font-semibold">Followed</p>
+                </div>
+              </div>
+              <div class="flex items-center gap-2">
+                <div class="imgsrt h-10 w-11 rounded-full overflow-hidden">
+                  <img class="h-full w-full object-cover" src="https://i.pinimg.com/236x/b5/84/5c/b5845c96e2c89a4006dc889cc71b5489.jpg" alt="">
+                </div>
+                <div class="flex items-center justify-between w-full">
+                <div class="flex flex-col">
+                  <p class="text-xs font-semibold">Shivani</p>
+                  <span class="opacity-50 text-[11px] font-semibold">Suggested for you</span>
+                </div>
+                  <p class="text-xs text-blue-500 font-semibold">Follow</p>
+                </div>
+              </div>
+              <div class="flex items-center gap-2">
+                <div class="imgsrt h-10 w-11 rounded-full overflow-hidden">
+                  <img class="h-full w-full object-cover" src="https://i.pinimg.com/236x/82/b2/3e/82b23e32957f959fccd7ca813490960d.jpg" alt="">
+                </div>
+                <div class="flex items-center justify-between w-full">
+                <div class="flex flex-col">
+                  <p class="text-xs font-semibold">Shreya</p>
+                  <span class="opacity-50 text-[11px] font-semibold">Followed by abhishek</span>
+                </div>
+                  <p class="text-xs text-blue-500 font-semibold">Follow</p>
+                </div>
+              </div>
+             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    feather.replace();
+  </script>
+</html>
